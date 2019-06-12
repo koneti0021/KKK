@@ -1,8 +1,8 @@
 pipeline{
-    agent{label 'master'}
+    agent{label 'brahmi'}
     stages{
         stage('codecheckout'){
-            agent{label 'master'}
+            agent{label 'brahmi'}
             steps{
                 script{
                     sh "echo hi hello"
@@ -10,7 +10,7 @@ pipeline{
             }
         }
         stage('build'){
-            agent{label 'master'}
+            agent{label 'brahmi'}
             steps{
                 script{
                     sh "echo hi hello"
@@ -18,7 +18,7 @@ pipeline{
             }
         }
         stage('test'){
-            agent{label 'master'}
+            agent{label 'brahmi'}
             steps{
                 script{
                     sh "echo hi hello"
